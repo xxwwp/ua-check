@@ -1,16 +1,18 @@
 {
   "name": "ua-check",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Check and identify \"navigator.userAgent\"",
   "homepage": "https://github.com/xxwwp/ua-check",
   "main": "index.js",
-  "types": "lib/index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
-    "build": "set NODE_ENV=production&&tsc&&publish"
+    "build": "set NODE_ENV=production&& rollup -c ./rollup.config.js"
   },
   "files": [
-    "index.d.ts",
-    "index.js"
+    "lib/index.d.ts",
+    "lib/index.js",
+    "lib/index.esm.js",
+    "lib/index.umd.js"
   ],
   "license": "MIT",
   "author": "JiahaoLiu",
@@ -31,7 +33,9 @@
     "url": "https://github.com/xxwwp/ua-check/issues"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3",
     "cz-conventional-changelog": "3.3.0",
+    "rollup": "^2.75.7",
     "typescript": "^4.7.4"
   },
   "config": {
