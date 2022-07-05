@@ -1,9 +1,9 @@
 {
   "name": "ua-check",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Check and identify \"navigator.userAgent\"",
   "homepage": "https://github.com/xxwwp/ua-check",
-  "main": "index.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "set NODE_ENV=production&& rollup -c ./rollup.config.js"
