@@ -1,0 +1,42 @@
+{
+  "name": "ua-check",
+  "version": "1.0.0",
+  "description": "Check and identify \"navigator.userAgent\"",
+  "homepage": "https://github.com/xxwwp/ua-check",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "set NODE_ENV=production&&tsc&&publish"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "license": "MIT",
+  "author": "JiahaoLiu",
+  "prettier": {
+    "printWidth": 120
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxwwp/ua-check.git"
+  },
+  "keywords": [
+    "check",
+    "dientify",
+    "ua",
+    "useragent"
+  ],
+  "bugs": {
+    "url": "https://github.com/xxwwp/ua-check/issues"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "typescript": "^4.7.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
