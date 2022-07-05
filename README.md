@@ -28,6 +28,12 @@ if (ua.isWeChatBrowser) {
 }
 ```
 
+如果你使用的是 CDN，那么请选择库中的 lib/index.umd.js 文件，ua-check 使用 UACheck 挂载在全局上，内置一个 uaCheck 函数，使用如：
+
+```js
+const os = window.UACheck.uaCheck();
+```
+
 ## Api
 
 ua-check 默认仅导出一个函数，直接执行该函数，将返回一个对象，对象含有以下属性：
