@@ -10,7 +10,7 @@ export function uaCheck() {
     isIPhone = /iPhone/.test(ua) && !isTablet,
     isPc = !isIPhone && !isAndroid && !isSymbian && !isTablet,
     isPhone = !isPc && !isTablet,
-    isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+    isIOS = !!ua.match(/macintosh|mac os x/),
     isIE = !!(window as any).ActiveXObject || "ActiveXObject" in window ? true : false,
     // 判断品牌
     isWeChatBrowser = /MicroMessenger/i.test(ua), // 微信浏览器

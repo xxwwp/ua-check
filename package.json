@@ -1,6 +1,6 @@
 {
   "name": "ua-check",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Check and identify \"navigator.userAgent\"",
   "homepage": "https://github.com/xxwwp/ua-check",
   "main": "lib/index.js",
